@@ -59,8 +59,8 @@ CREATE TABLE comentarios(
 );
 
 /*Cria Tabela SeguirUser*/
-CREATE TABLE SeguirUser(
-	id bigint PRIMARY KEY, 
+CREATE TABLE seguiruser(
+	id bigint PRIMARY KEY AUTO_INCREMENT, 
     id_seguindo bigint not null,
     id_seguidor bigint not null,
     FOREIGN KEY(id_seguindo) REFERENCES usuarios(id),
