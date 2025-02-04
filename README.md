@@ -69,4 +69,5 @@
   </ul>
   <p>
     Este foi um projeto muito completo, por mais que tenha Diversas novidades que devem ser implementadas ainda o Projeto terá uma pausa, pois tenho um novo projeto que deverá ser desenvolvido nos proximos dias, sintam-se a vontade para testar.
+    Documentação Detalhada do Projeto ainda será Desenvolvida.
   </p>
