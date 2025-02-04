@@ -1,0 +1,306 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#header
+{
+    background-color: black;
+}
+html, body 
+{ height:100%; 
+width: 100%; }
+#Titulo
+{
+    text-align: center;margin-top:10px ;
+}
+
+#Formulario
+{
+    text-align: center; padding: 10px; margin-top: 8%;
+}
+#InputSenha
+{
+    position: relative;
+}
+#SenhaVisivel
+{
+    margin-top:2px ;position: absolute; background-color: white; border-radius: 100%; margin-left: 3px;
+}
+
+#EnviarLogin
+{
+    display: flex; justify-self: center; margin-top: 10px;
+}
+#TrocaParaCadastro
+{
+    margin-top: 15%;
+}
+#TrocaParaCadastrop{
+margin-top: 25%;
+}
+#TextoFazerCadastro
+{
+text-align: center;margin-top:20px ;
+}
+#FormularioCadastro
+{
+text-align: center; padding: 10px; margin-top: 3%;
+}
+#SenhaCadastro
+{
+position: relative;
+}
+#SenhaVisivel2
+{
+margin-top:2px ;position: absolute; background-color: white; border-radius: 100%; margin-left: 3px;
+}
+#BotaoCriarUser
+{
+display: flex; justify-self: center;
+}
+#TituloTrocaLogin
+{
+margin-top: 15%;    
+}
+#CliqueParaAlterar
+{
+    margin-top: 25%;    
+}
+
+#AlertaErro
+{
+    position: relative;
+    top: 100px;
+    left: 15px;
+    width: 70%;
+    margin: auto ;
+}
+
+#BackGroundLogin
+{
+    background-color: rgba(0, 0, 0, 0.623);
+}
+#FundoLogin
+{
+    height: 61em;
+
+}
+#Colunas
+{
+    height: 55%;
+    background-color: rgb(87, 104, 103);
+    margin-top: 15%;
+    border-top-left-radius: 20%;
+    animation-name: trocaTelas;
+    animation-duration: 2s;
+    animation-delay: 0.01ms;
+    animation-play-state: paused;
+
+}
+#Colunas2
+{
+    text-align: center;
+    height: 55%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 15%;
+    border-bottom-right-radius: 20%;
+    animation-name: trocaTelas2;
+    animation-duration: 2s;
+    animation-delay: 0.01ms;
+    animation-play-state: paused;
+}
+#DigiteEmail
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+}
+#DigiteSenha
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 25px; 
+}
+.Inputs
+{
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.Inputs2
+{
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
+.InputsCadastro2
+{
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
+#FundoCadastro
+{
+    height: 61em;
+}
+#DigiteCadastro
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#ColunasCadastro
+{
+    height: 55%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 15%;
+    border-top-left-radius: 20%;
+    animation-name: trocaTelas;
+    animation-duration: 2s;
+
+}
+#ColunasCadastro2
+{
+    text-align: center;
+    height: 55%;
+    background-color: rgb(87, 104, 103);
+    margin-top: 15%;
+    border-bottom-right-radius: 20%;
+    animation-name: trocaTelas2;
+    animation-duration: 2s;
+}
+@keyframes trocaTelas
+{
+    from
+    {
+        border-top-left-radius:0 ;
+        border-bottom-right-radius:20% ;
+        position: relative;
+        left:50%;
+    }
+    to
+    {
+        border-top-left-radius:20%;
+        border-bottom-right-radius:0 ;
+        position: relative;
+        left:0;
+    }
+}
+@keyframes trocaTelas2
+{
+    from
+    {
+        border-bottom-right-radius:0 ;
+        border-top-left-radius:20% ;
+        position: relative;
+        right:50%;
+
+    }
+    to
+    {
+        border-bottom-right-radius:20% ;
+        border-top-left-radius:0 ;
+        position: relative;
+        right:0;
+    }
+}
+@media (max-width: 428px) {
+    #AlertaErro
+{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+    #Fundo
+    {
+        background-image: url("./assets/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #FundoLogin
+    {
+        height:80em;
+    
+    }
+    #FundoCadastro
+{
+    height: 80em;
+}
+    #Colunas
+    {
+        height: 50%;
+        background-color: rgb(81, 100, 99);
+        border-top-left-radius: 0;
+        animation-name: trocaTelas;
+        animation-duration: 2s;
+        animation-delay: 0.01ms;
+        animation-play-state: paused;
+        margin: 0;
+
+    
+    }
+#Colunas2
+{
+    margin: 0;
+    height: 50%;
+    background-color: rgb(0, 0, 0);
+    border-bottom-right-radius: 0;
+    animation-name: trocaTelas2;
+    animation-duration: 2s;
+    animation-delay: 0.01ms;
+    animation-play-state: paused;
+}
+#ColunasCadastro
+{
+    height: 50%;
+    border-top-left-radius: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    animation-name: trocaTelas;
+    animation-duration: 2s;
+
+}
+#ColunasCadastro2
+{
+    margin: 0;
+    border-bottom-right-radius: 0;
+    height: 50%;
+    background-color: rgb(87, 104, 103);
+    animation-name: trocaTelas2;
+    animation-duration: 2s;
+}
+@keyframes trocaTelas
+{
+    from
+    {
+        position: relative;
+        left:50%;
+    }
+    to
+    {
+        position: relative;
+        left:0;
+    }
+}
+@keyframes trocaTelas2
+{
+    from
+    {
+        position: relative;
+        right:50%;
+
+    }
+    to
+    {
+        position: relative;
+        right:0;
+    }
+}
+}

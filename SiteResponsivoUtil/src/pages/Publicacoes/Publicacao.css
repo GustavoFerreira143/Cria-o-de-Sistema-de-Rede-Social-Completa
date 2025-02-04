@@ -1,0 +1,247 @@
+
+#NavBarPubli
+{
+    background-color: black;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    border-top: 1px solid rgb(148, 148, 148);
+}
+.Fundo {
+    background-image: url('../../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.Filtro {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+/* Nome de Usuário */
+.NomeUser {
+    font-size: 20px;
+    margin-top: 11px;
+}
+#BordaFundoPublicacao
+{
+    min-width: 100%;
+    max-width: 100%;
+}
+/* Área de Publicação */
+#VideoImagePubli {   
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+#VideoImagePubli img,
+#VideoImagePubli video {
+    min-width: 70%;
+    max-height: 400px;
+    max-width: 70%;
+    border-radius: 20px;
+}
+
+/* Perfil do Usuário */
+#PerfilUser {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 55%;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#PerfilUsuarioevent {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#imgusuario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Comentários */
+#AlinhamentoComentarios {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: left;
+}
+
+#SeguirUsuario {
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    padding: 5px 15px;
+}
+
+/* Ícones */
+#Curtir, #Encaminhar {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 5px;
+   float: right;
+}
+
+/* Área de Inserção de Comentários */
+#InputInserirComentario {
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+    margin: 10px auto;
+    display: block;
+}
+
+#EnviarComentario {
+    display: block;
+    margin: 10px auto;
+}
+#item-hover3
+{
+margin-left: 20px;
+}
+#VoltarTop
+{
+    position: fixed;
+    z-index: 99;
+    left: 86%;
+    bottom: 10px;
+    width: 50px;
+    border-radius: 100%;
+}
+#VoltarTop button
+{
+    min-width: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.VoltarTopoImg
+{
+    min-width: 100%;
+    min-height: 100%;
+}
+.NaoSegue
+{
+    height: 65vh;
+    margin: 5vh;
+    border-radius: 20px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    #PerfilUser, #VideoImagePubli, #AlinhamentoComentarios {
+        width: 80%;
+    }
+    #Comentarios
+    {
+        max-width: 75%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #AreaClicavel
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #Comentarios
+    {
+        max-width: 60%;
+    }
+    #item-hover3
+{
+margin-top: 10px;
+margin-left:0 ;
+}
+    #PerfilUser, #VideoImagePubli, #AlinhamentoComentarios {
+        width: 90%;
+    }
+
+    .NomeUser {
+        font-size: 16px;
+    }
+
+    #SeguirUsuario {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #VideoImagePubli img,
+    #VideoImagePubli video {
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 300px;
+        max-width: 300px;
+
+    }
+
+    #InputInserirComentario {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    #PerfilUser, #VideoImagePubli, #AlinhamentoComentarios {
+        min-width: 80%;
+    }
+
+    .NomeUser {
+        font-size: 14px;
+    }
+
+    #SeguirUsuario {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #InputInserirComentario {
+        width: 80%;
+    }
+    #Curtir, #Encaminhar {
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+        height: 30px;
+        border-radius: 10px;
+        margin-right: 10px;
+       float: right;
+    }
+
+}
+
+#InserirComentarioPubli
+{
+    position: relative;
+    max-width:100%;
+}
+#FundoTelaUsuarioFeed
+{
+    position: relative;
+}
+#SeguiruserBloco
+{
+    max-height: 40px;
+    position: absolute;
+    top: 17px;
+    left: 58%;
+}

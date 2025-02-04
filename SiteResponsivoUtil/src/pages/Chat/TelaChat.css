@@ -1,0 +1,847 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+#colunas {
+    padding: 10px;
+
+}
+
+#imgusuario {
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 15px;
+}
+
+#Voltar {
+    padding: 10px;
+}
+
+#Publicacao {
+    margin-top: 20px;
+}
+
+#NomeUser {
+    margin-top: 20px;
+}
+
+#Voltar {
+    margin-top: 20px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#Filtro {
+    background-color: rgba(0, 0, 0, 0.774);
+    height: 100%;
+    width: 100%;
+}
+
+#Fundo {
+
+    background-image: url("../../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+}
+
+/*Tela Contatos*/
+#IdUser {
+    font-size: 12px;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+
+#NumerodoUser {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+}
+
+#ContatosEspaco {
+    margin-top: 1em;
+    height: 45em;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+
+}
+
+#ContatosEspaco::-webkit-scrollbar {
+    background-color: rgb(0, 255, 255);
+    border-radius: 10px;
+    width: 10px;
+    
+}
+#ContatosEspaco::-webkit-scrollbar-thumb
+{
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
+
+#fundocontatos {
+    background-color: rgba(0, 0, 0, 0.185);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#textocontato {
+    height: 10px;
+    margin-left: 2px;
+
+}
+
+#TextoParagrafo {
+
+    margin-left: 5px;
+    width: 200px;
+    
+}
+
+#imgcontatos {
+    border-radius: 100%;
+    background-color: rgb(192, 192, 192);
+    padding: 3px;
+}
+
+#ContatosMensagem {
+    border-top-left-radius: 10px;
+    border: 2px solid rgb(51, 51, 51);
+    padding: 10px;
+    margin-bottom: 5px;
+    margin: 10px 3px;
+    cursor: pointer;
+}
+
+/*Tela Mensagens*/
+#fundomensagem {
+    border-top-right-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.158);
+    padding: 0;
+    border-bottom-right-radius: 15px;
+}
+
+#Bate-Papo {
+    margin-bottom: 10px;
+    height: 43em;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#Bate-Papo::-webkit-scrollbar {
+    background-color: rgb(0, 240, 240);
+    border-radius: 10px;
+    width: 10px;
+}
+
+#Bate-Papo::-webkit-scrollbar-thumb {
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
+
+#texto {
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+#EmConversaCom {
+    padding: 15px;
+}
+
+#InputMensagem {
+    width: 70%;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding-left: 5px;
+}
+
+#Botao {
+    text-align: center;
+    height: 40px;
+    margin: 5px;
+    width: 100px;
+}
+
+#Galeria {
+    height: 50px;
+    margin: 5px;
+}
+
+/*Balão de Mensagem*/
+.messageDestino {
+    background-color: rgb(24, 17, 17);
+    color: rgb(209, 209, 209);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-left: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 20px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    margin-bottom:20px;
+    overflow-wrap: break-word;
+    max-width: 50%;
+    
+}
+
+.messageRemetente {
+    background-color: rgb(24, 17, 17);
+    color: rgb(209, 209, 209);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-right: 5px;
+    max-width: 50%;
+    border: 2px groove rgb(255, 255, 255);
+    padding: 5px 20px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+
+.hora {
+    font-size: 12px;
+}
+
+.dia {
+    clear: both;
+    text-align: center;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+#RespondendoMensagem {
+    clear: both;
+}
+
+#Opcoes {
+    animation-name: Chegar;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    clear: both;
+    width: 40%;
+    background-color: black;
+    height: 50px;
+}
+
+#BotaoDescartar {
+    height: 40px;
+}
+
+@keyframes Chegar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+#CaixaResponder {
+    margin-top: -5px;
+    width: 100%;
+    background-color: black;
+    height: 35px;
+    font-size: 100%;
+}
+
+#Mensagem {
+    clear: both;
+    
+}
+
+#DigiteSuaMensagem {
+    padding: 1%;
+    width: 99%;
+}
+#CasoImg
+{
+    border-radius: 50px;
+}
+@media (max-width:482px) {
+    .messageDestino {
+        background-color: rgb(24, 17, 17);
+        color: rgb(209, 209, 209);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        margin-left: 5px;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 5px 20px;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        margin-bottom:20px;
+        overflow-wrap: break-word;
+        max-width:60%;
+        
+    }
+    
+    .messageRemetente {
+        background-color: rgb(24, 17, 17);
+        color: rgb(209, 209, 209);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        margin-right: 5px;
+        max-width: 60%;
+        border: 2px groove rgb(255, 255, 255);
+        padding: 5px 20px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        margin-bottom: 20px;
+        overflow-wrap: break-word;
+    }
+    
+    #Filtro {
+
+        background-color: rgba(0, 0, 0, 0.685);
+        height: 100%;
+        width: 100%;
+    }
+
+    #fundocontatos {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #FundoMobile {
+        background-image: url("../../src/assets/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    #ContatosEspaco {
+        margin-top: 5em;
+        height: 30em;
+        overflow: hidden;
+        overflow-y: scroll;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.26);
+
+    }
+
+    #Publicacao {
+        padding: 10px;
+        padding-right: 33px;
+
+    }
+
+    #Bate-Papo {
+        margin-bottom: 10px;
+        height: 29em;
+        overflow: hidden;
+        overflow-y: scroll;
+        background-color: rgba(66, 101, 112, 0.596);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
+
+#EmConversaCom {
+    background-color: rgba(59, 59, 59, 0.075);
+    cursor: pointer;
+}
+
+#Respondendoha {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#TextoResposta {
+    margin-left: 2%;
+}
+
+#BotaoVoltar {
+    margin-top: 5px;
+    height: 40px;
+    position: relative;
+}
+
+#EnviarMensagemIcon {
+    margin-top: -12px;
+}
+
+#Balao {
+    position: absolute;
+    bottom: 45px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+    padding: 8px;
+    border-radius: 25px;
+    right: -40px;
+}
+
+.audio-player {
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+.audio-playerChat
+{
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+    width: 100%; 
+}
+#playPauseBtn {
+    background: #6a87ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 100%;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+#playPauseBtn.play {
+    background: #5e9296;
+}
+
+#playPauseBtn.pause {
+    background: #f44336;
+}
+
+#inputRange[type=range] {
+    appearance: none;
+    background-color: #ffffff;
+    height: 5px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#inputRange[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: black;
+    border-radius: 100%;
+    width: 15px;
+    height: 20px;
+}
+
+#currentTime,
+#duration {
+    font-size: 14px;
+    color: white;
+
+}
+
+#botaovolumen {
+    position: relative;
+}
+
+#SetarVolume[type=range] {
+    appearance: none;
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 5px;
+    width: 100px;
+
+}
+
+
+#SetarVolume[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: black;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+#TamanhoBox {
+    padding: 4px;
+    background-color: rgba(21, 90, 75, 0.548);
+    border-radius: 10px;
+    position: relative;
+    width: 160px;
+    left: 10px;
+}
+#NomeUserBloco
+{
+    cursor: pointer;
+}
+#NaoLidas
+{
+    text-align: center;
+    position: absolute;
+    left: 78px;
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+    background-color: #265a53;
+    border-radius: 100%;
+}
+
+#inputAudioMensagem[type=range] {
+    appearance: none;
+    background-color: #04ffff;
+    height: 5px;
+    border-radius: 20px;
+    width: 50px;
+}
+
+#inputAudioMensagem[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #23ccbe;
+    border-radius: 100%;
+    width: 15px;
+    height: 20px;
+}
+
+#VolumeChatSet[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #23ccbe;
+    height: 15px;
+    border-radius: 20px;
+    width: 15px;
+}
+
+#VolumeChatSet[type=range] {
+    appearance: none;
+    background-color: #04ffff;
+    height: 5px;
+    border-radius: 20px;
+    width: 50px;
+}
+#BotaoPausaAudio{
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#VolumenimgMensagem
+{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#botaoVolMensagem
+{
+    width: 10%;
+    height: 10%;
+}
+#TempoAtual
+{
+    font-size: 12px;
+}
+#Duracao
+{
+    font-size: 12px;
+}
+
+
+#BarradeAudioContatos[type=range] {
+    appearance: none;
+    background-color: #04ffff;
+    height: 5px;
+    border-radius: 20px;
+    width: 25%;
+}
+
+#BarradeAudioContatos[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #04ffff;
+    height: 12px;
+    border-radius: 20px;
+    width: 10px;
+}
+#ImagemChat
+{
+    max-width: 200px;
+    max-height: 150px;
+}
+
+@media (max-width: 752px) {
+    #inputAudioMensagem[type=range] {
+        appearance: none;
+        background-color: #04ffff;
+        height: 5px;
+        border-radius: 20px;
+        width: 40px;
+    }
+#ImagemChat
+{
+    max-width: 150px;
+    max-height: 150px;
+}
+    
+    #inputAudioMensagem[type=range]::-webkit-slider-thumb {
+        appearance: none;
+        background-color: #23ccbe;
+        border-radius: 100%;
+        width: 15px;
+        height: 20px;
+    }
+    
+    #VolumeChatSet[type=range]::-webkit-slider-thumb {
+        appearance: none;
+        background-color: #23ccbe;
+        height: 15px;
+        border-radius: 20px;
+        width: 15px;
+    }
+    
+    #VolumeChatSet[type=range] {
+        appearance: none;
+        background-color: #04ffff;
+        height: 5px;
+        border-radius: 20px;
+        width: 25px;
+    }
+    #BotaoPausaAudio{
+    
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    #VolumenimgMensagem
+    {
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #botaoVolMensagem
+    {
+        width: 10%;
+        height: 10%;
+    }
+    #TempoAtual
+    {
+        font-size: 12px;
+    }
+    #Duracao
+    {
+        font-size: 12px;
+    }
+    
+    
+    #BarradeAudioContatos[type=range] {
+        appearance: none;
+        background-color: #04ffff;
+        height: 5px;
+        border-radius: 20px;
+        width: 25%;
+    }
+    
+    #BarradeAudioContatos[type=range]::-webkit-slider-thumb {
+        appearance: none;
+        background-color: #04ffff;
+        height: 12px;
+        border-radius: 20px;
+        width: 10px;
+    }
+    
+    
+}
+
+
+
+
+
+
+#AbrirEnvioDocumentos {
+    position: relative;
+}
+
+#EnviarDocumentoBloco {
+    position: absolute;
+    padding: 5px;
+    background-color: #000000;
+    width: 150px;
+    height: 65px;
+    bottom: 50px;
+    right: -80px;
+    border-radius: 10px;
+    animation-name:AnimacaoAparecer;
+    animation-duration: 2s;
+}
+#IconsDocumento
+{
+    margin-left: 5px;
+    background-color: rgb(0, 238, 255);
+    animation-name:AnimacaoAparecer;
+    animation-duration: 2s;
+}
+#IconsImg
+{
+    background-color: rgb(0, 238, 255);
+    animation-name:AnimacaoAparecer;
+    animation-duration: 2s;
+}
+#IconsDocumento:hover
+{
+    margin-left: 5px;
+    background-color: rgb(255, 255, 255);
+    animation-name:AnimacaoAparecer;
+    animation-duration: 2s;
+}
+#IconsImg:hover
+{
+    background-color: rgb(255, 255, 255);
+    animation-name:AnimacaoAparecer;
+    animation-duration: 2s;
+}
+#PortaDados
+{
+
+    left:150px;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom:10px;
+    background-color: #5f5f5fb0;
+    border-radius: 20px;
+    animation-name:AnimacaoAparecer;
+    animation-duration: 1s;
+}
+#PortaDados img
+{
+    width: 250px;
+    height: 180px; 
+    animation-name:AnimacaoAparecer;
+    animation-duration: 1s;
+}
+#CasoVideo
+{
+    min-height: 70%;
+    max-height: 70%;
+}
+.img-thumbnail
+{
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 50px;
+    max-height:50px ;
+}
+#BotaoCancelarEnvio
+{
+    float: right;
+    height:32px;
+    border-top-right-radius: 20px;
+}
+#NomeArquivo
+{
+    width: 250px;
+    height: 20px;
+}
+#TipoDeArquivo
+{
+    margin-left: 70px;
+}
+#preview
+{
+    clear: both;
+    margin-top:13px;
+}
+
+#TextoDeHora
+{
+    text-align: end;
+}
+#Lidas
+{
+    clear: both;
+    position: relative;
+}
+@keyframes AnimacaoAparecer {
+    from
+    {
+
+        opacity: 0;
+
+    }
+    to{
+
+        opacity: 1;
+        
+    }
+
+}
+
+@media (max-width:428px) {
+    #TipoDeArquivo
+    {
+        margin-left: 40px;
+    }
+    #PortaDados
+    {
+    
+        left:150px;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        bottom:10px;
+        background-color: #5f5f5fb0;
+        border-radius: 20px;
+    }
+    #PortaDados img
+    {
+        width: 200px;
+        height: 130px;
+    }
+    #BotaoCancelarEnvio
+    {
+        float: right;
+        height:32px;
+        border-top-right-radius: 20px;
+    }
+    #preview
+    {
+        clear: both;
+        margin-top:13px;
+    } 
+    #NomeArquivo
+{
+    width: 200px;
+    height: 20px;
+} 
+}
+
+
+#PesquisarUsuario
+{
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 5px;
+}
+input[type = "checkbox"]
+{
+
+    width: 20px;
+    height: 20px;
+}
+#SomentenaoLidas
+{
+    position: relative;
+    left: 25px;
+    top: 5px;
+    background-color: #265a53;
+}

@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body { height: 100%; width: 100%; }
+
+/* Corpo*/
+#FundoHome
+{
+
+  background-image: url('../../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+#backgorund
+{
+  background-color: rgba(0, 0, 0, 0.705);
+  height:61em;
+}
+
+#IniciarChat {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#IniciarBatePapo
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+#BatePapo {
+  border-radius: 10%;
+  margin-left: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width:428px) {
+  #IniciarChat {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left:25% ;
+  }
+  #IniciarBatePapo
+  {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left:22% ;
+  }
+}
